@@ -104,8 +104,9 @@ class _EventLabel extends StatelessWidget {
       // height: 25,
       color:event.eventBackgroundColor,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 5,vertical: 1),
-        child: Text("10",
+        padding: const EdgeInsets.symmetric(horizontal: 5,vertical:0),
+        child: Text(
+          event.eventName,
           style: event.eventTextStyle,
           textAlign: TextAlign.center,
           overflow: TextOverflow.ellipsis,
